@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cho thuê căn hộ chung cư - ThanhMienLand</title>
+  <meta name="description" content="Cho thuê căn hộ chung cư studio, 1PN, 2PN, 3PN đầy đủ nội thất tại TP.HCM và Hà Nội. Giá minh bạch, xem nhà miễn phí, hợp đồng rõ ràng." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="../../index.html" class="logo">
+        <span class="logo__icon"><i class="fa-solid fa-house-chimney"></i></span>
+        <span class="logo__text">ThanhMien<b>Land</b></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Menu chính">
+        <a href="#gioi-thieu" class="nav__link">Giới thiệu</a>
+        <a href="#tien-ich" class="nav__link">Tiện ích</a>
+        <a href="#can-ho" class="nav__link">Căn hộ</a>
+        <a href="#hoi-dap" class="nav__link">Hỏi đáp</a>
+        <a href="#lien-he" class="nav__link">Liên hệ</a>
+        <a href="../../index.html" class="nav__link nav__link--home"><i class="fa-solid fa-arrow-left"></i> Trang chủ</a>
+      </nav>
+
+      <div class="header__actions">
+        <a href="tel:19000000" class="header__hotline"><i class="fa-solid fa-phone"></i> 1900 0000</a>
+        <a href="#lien-he" class="btn btn--primary btn--sm">Đặt lịch xem</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Mở menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="trang-chu">
+      <img class="hero__bg" src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=1600" alt="Phòng khách căn hộ cho thuê đầy đủ nội thất" />
+      <div class="container hero__content">
+        <span class="hero__tag"><i class="fa-solid fa-key"></i> Cho thuê căn hộ chung cư</span>
+        <h1 class="hero__title">Tìm căn hộ ưng ý,<br />dọn vào ở ngay trong tuần</h1>
+        <p class="hero__desc">Hơn 2.500 căn hộ studio, 1–3 phòng ngủ đầy đủ nội thất tại TP.HCM và Hà Nội. Giá thuê minh bạch, xem nhà miễn phí, hợp đồng rõ ràng.</p>
+        <div class="hero__actions">
+          <a href="#can-ho" class="btn btn--primary">Xem căn hộ trống <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#lien-he" class="btn btn--ghost">Nhận tư vấn miễn phí</a>
+        </div>
+
+        <form class="quick-search" id="quickSearch">
+          <label class="quick-search__field">
+            <span>Khu vực</span>
+            <select id="qsArea">
+              <option value="">Tất cả khu vực</option>
+              <option>Quận 7, TP.HCM</option>
+              <option>Thủ Đức, TP.HCM</option>
+              <option>Bình Thạnh, TP.HCM</option>
+              <option>Cầu Giấy, Hà Nội</option>
+            </select>
+          </label>
+          <label class="quick-search__field">
+            <span>Loại căn hộ</span>
+            <select id="qsType">
+              <option value="all">Tất cả</option>
+              <option value="studio">Studio</option>
+              <option value="1pn">1 phòng ngủ</option>
+              <option value="2pn">2 phòng ngủ</option>
+              <option value="3pn">3 phòng ngủ trở lên</option>
+            </select>
+          </label>
+          <button type="submit" class="btn btn--primary"><i class="fa-solid fa-magnifying-glass"></i> Tìm căn hộ</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ================= THÔNG TIN NỔI BẬT ================= -->
+    <section class="stats">
+      <div class="container stats__grid">
+        <div class="stat reveal">
+          <i class="fa-solid fa-building"></i>
+          <strong class="stat__num" data-target="2500" data-suffix="+">0</strong>
+          <span>Căn hộ đang cho thuê</span>
+        </div>
+        <div class="stat reveal">
+          <i class="fa-solid fa-city"></i>
+          <strong class="stat__num" data-target="45">0</strong>
+          <span>Dự án chung cư</span>
+        </div>
+        <div class="stat reveal">
+          <i class="fa-solid fa-face-smile"></i>
+          <strong class="stat__num" data-target="8000" data-suffix="+">0</strong>
+          <span>Khách thuê hài lòng</span>
+        </div>
+        <div class="stat reveal">
+          <i class="fa-solid fa-clock"></i>
+          <strong class="stat__num" data-target="24" data-suffix="h">0</strong>
+          <span>Phản hồi yêu cầu</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= GIỚI THIỆU ================= -->
+    <section class="section" id="gioi-thieu">
+      <div class="container about">
+        <div class="about__media reveal">
+          <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=800" alt="Tòa chung cư hiện đại" loading="lazy" />
+          <div class="about__badge">
+            <strong>100%</strong>
+            <span>căn hộ được kiểm tra thực tế</span>
+          </div>
+        </div>
+        <div class="about__text reveal">
+          <span class="section__eyebrow">Vì sao chọn chúng tôi</span>
+          <h2 class="section__title">Thuê căn hộ dễ dàng, an tâm từ ngày đầu</h2>
+          <p>ThanhMienLand kết nối trực tiếp chủ nhà và người thuê, kiểm tra tận nơi từng căn trước khi đăng. Bạn xem đúng căn mình sẽ ở, ký hợp đồng mẫu rõ ràng và được hỗ trợ suốt thời gian thuê.</p>
+          <ul class="checklist">
+            <li><i class="fa-solid fa-circle-check"></i> Ảnh thật, giá thật — không phí ẩn</li>
+            <li><i class="fa-solid fa-circle-check"></i> Xem nhà miễn phí, linh hoạt cả cuối tuần</li>
+            <li><i class="fa-solid fa-circle-check"></i> Hợp đồng từ 6 tháng, đặt cọc chỉ 1 tháng</li>
+            <li><i class="fa-solid fa-circle-check"></i> Hỗ trợ sửa chữa, bảo trì trong 48 giờ</li>
+          </ul>
+          <a href="#lien-he" class="btn btn--primary">Đặt lịch xem nhà</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TIỆN ÍCH ================= -->
+    <section class="section section--alt" id="tien-ich">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__eyebrow">Tiện ích</span>
+          <h2 class="section__title">Mọi thứ bạn cần cho cuộc sống tiện nghi</h2>
+          <p class="section__desc">Các căn hộ đều nằm trong dự án có quản lý chuyên nghiệp và tiện ích nội khu đầy đủ.</p>
+        </div>
+        <div class="features">
+          <article class="feature reveal"><span class="feature__icon"><i class="fa-solid fa-couch"></i></span><h3>Nội thất đầy đủ</h3><p>Giường, tủ, sofa, bếp, máy lạnh, máy giặt — xách vali vào ở.</p></article>
+          <article class="feature reveal"><span class="feature__icon"><i class="fa-solid fa-person-swimming"></i></span><h3>Hồ bơi &amp; gym</h3><p>Miễn phí cho cư dân, mở cửa từ 6h đến 22h hằng ngày.</p></article>
+          <article class="feature reveal"><span class="feature__icon"><i class="fa-solid fa-shield-halved"></i></span><h3>An ninh 24/7</h3><p>Bảo vệ, camera và thẻ từ thang máy cho từng tầng.</p></article>
+          <article class="feature reveal"><span class="feature__icon"><i class="fa-solid fa-square-parking"></i></span><h3>Hầm gửi xe</h3><p>Chỗ đậu ô tô và xe máy rộng rãi, có camera giám sát.</p></article>
+          <article class="feature reveal"><span class="feature__icon"><i class="fa-solid fa-wifi"></i></span><h3>Internet tốc độ cao</h3><p>Cáp quang lắp sẵn, chỉ cần đăng ký là dùng.</p></article>
+          <article class="feature reveal"><span class="feature__icon"><i class="fa-solid fa-store"></i></span><h3>Siêu thị nội khu</h3><p>Cửa hàng tiện lợi, quán cà phê ngay dưới sảnh.</p></article>
+          <article class="feature reveal"><span class="feature__icon"><i class="fa-solid fa-children"></i></span><h3>Khu vui chơi trẻ em</h3><p>Sân chơi an toàn, công viên xanh trong khuôn viên.</p></article>
+          <article class="feature reveal"><span class="feature__icon"><i class="fa-solid fa-screwdriver-wrench"></i></span><h3>Bảo trì nhanh</h3><p>Báo hỏng qua hotline, kỹ thuật đến xử lý trong 48 giờ.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CĂN HỘ ================= -->
+    <section class="section" id="can-ho">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__eyebrow">Căn hộ đang trống</span>
+          <h2 class="section__title">Chọn căn hộ phù hợp với bạn</h2>
+        </div>
+
+        <div class="filters" role="tablist" aria-label="Lọc theo loại căn hộ">
+          <button class="filter is-active" data-filter="all" role="tab">Tất cả</button>
+          <button class="filter" data-filter="studio" role="tab">Studio</button>
+          <button class="filter" data-filter="1pn" role="tab">1 phòng ngủ</button>
+          <button class="filter" data-filter="2pn" role="tab">2 phòng ngủ</button>
+          <button class="filter" data-filter="3pn" role="tab">3 phòng ngủ+</button>
+        </div>
+
+        <div class="units" id="units">
+          <article class="unit reveal" data-type="studio">
+            <button class="unit__img" data-full="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&q=80&w=1400" aria-label="Phóng to ảnh Studio Sunrise">
+              <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&q=80&w=600&h=420" alt="Căn hộ studio Sunrise" loading="lazy" />
+              <span class="unit__tag">Studio</span>
+            </button>
+            <div class="unit__body">
+              <h3>Studio Sunrise City</h3>
+              <p class="unit__loc"><i class="fa-solid fa-location-dot"></i> Quận 7, TP.HCM</p>
+              <ul class="unit__meta"><li><i class="fa-solid fa-ruler-combined"></i> 35 m²</li><li><i class="fa-solid fa-bath"></i> 1 WC</li><li><i class="fa-solid fa-couch"></i> Full nội thất</li></ul>
+              <div class="unit__foot"><p class="unit__price">7,5 triệu<span>/tháng</span></p><a href="#lien-he" class="btn btn--outline btn--sm" data-unit="Studio Sunrise City">Đặt lịch xem</a></div>
+            </div>
+          </article>
+
+          <article class="unit reveal" data-type="1pn">
+            <button class="unit__img" data-full="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&q=80&w=1400" aria-label="Phóng to ảnh căn 1PN Green Bay">
+              <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&q=80&w=600&h=420" alt="Căn hộ 1 phòng ngủ Green Bay" loading="lazy" />
+              <span class="unit__tag">1 phòng ngủ</span>
+            </button>
+            <div class="unit__body">
+              <h3>1PN Green Bay</h3>
+              <p class="unit__loc"><i class="fa-solid fa-location-dot"></i> Bình Thạnh, TP.HCM</p>
+              <ul class="unit__meta"><li><i class="fa-solid fa-ruler-combined"></i> 52 m²</li><li><i class="fa-solid fa-bath"></i> 1 WC</li><li><i class="fa-solid fa-couch"></i> Full nội thất</li></ul>
+              <div class="unit__foot"><p class="unit__price">11 triệu<span>/tháng</span></p><a href="#lien-he" class="btn btn--outline btn--sm" data-unit="1PN Green Bay">Đặt lịch xem</a></div>
+            </div>
+          </article>
+
+          <article class="unit reveal" data-type="2pn">
+            <button class="unit__img" data-full="https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&q=80&w=1400" aria-label="Phóng to ảnh căn 2PN Sky Garden">
+              <img src="https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&q=80&w=600&h=420" alt="Căn hộ 2 phòng ngủ Sky Garden" loading="lazy" />
+              <span class="unit__tag">2 phòng ngủ</span>
+            </button>
+            <div class="unit__body">
+              <h3>2PN Sky Garden</h3>
+              <p class="unit__loc"><i class="fa-solid fa-location-dot"></i> Thủ Đức, TP.HCM</p>
+              <ul class="unit__meta"><li><i class="fa-solid fa-ruler-combined"></i> 72 m²</li><li><i class="fa-solid fa-bath"></i> 2 WC</li><li><i class="fa-solid fa-couch"></i> Full nội thất</li></ul>
+              <div class="unit__foot"><p class="unit__price">15 triệu<span>/tháng</span></p><a href="#lien-he" class="btn btn--outline btn--sm" data-unit="2PN Sky Garden">Đặt lịch xem</a></div>
+            </div>
+          </article>
+
+          <article class="unit reveal" data-type="2pn">
+            <button class="unit__img" data-full="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80&w=1400" aria-label="Phóng to ảnh căn 2PN Central Park">
+              <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80&w=600&h=420" alt="Căn hộ 2 phòng ngủ Central Park" loading="lazy" />
+              <span class="unit__tag">2 phòng ngủ</span>
+            </button>
+            <div class="unit__body">
+              <h3>2PN Central Park</h3>
+              <p class="unit__loc"><i class="fa-solid fa-location-dot"></i> Cầu Giấy, Hà Nội</p>
+              <ul class="unit__meta"><li><i class="fa-solid fa-ruler-combined"></i> 78 m²</li><li><i class="fa-solid fa-bath"></i> 2 WC</li><li><i class="fa-solid fa-couch"></i> Nội thất cơ bản</li></ul>
+              <div class="unit__foot"><p class="unit__price">13 triệu<span>/tháng</span></p><a href="#lien-he" class="btn btn--outline btn--sm" data-unit="2PN Central Park">Đặt lịch xem</a></div>
+            </div>
+          </article>
+
+          <article class="unit reveal" data-type="3pn">
+            <button class="unit__img" data-full="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&q=80&w=1400" aria-label="Phóng to ảnh căn 3PN Riverside">
+              <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&q=80&w=600&h=420" alt="Căn hộ 3 phòng ngủ Riverside" loading="lazy" />
+              <span class="unit__tag">3 phòng ngủ</span>
+            </button>
+            <div class="unit__body">
+              <h3>3PN Riverside</h3>
+              <p class="unit__loc"><i class="fa-solid fa-location-dot"></i> Quận 7, TP.HCM</p>
+              <ul class="unit__meta"><li><i class="fa-solid fa-ruler-combined"></i> 105 m²</li><li><i class="fa-solid fa-bath"></i> 2 WC</li><li><i class="fa-solid fa-couch"></i> Full nội thất</li></ul>
+              <div class="unit__foot"><p class="unit__price">22 triệu<span>/tháng</span></p><a href="#lien-he" class="btn btn--outline btn--sm" data-unit="3PN Riverside">Đặt lịch xem</a></div>
+            </div>
+          </article>
+
+          <article class="unit reveal" data-type="3pn">
+            <button class="unit__img" data-full="https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&q=80&w=1400" aria-label="Phóng to ảnh Penthouse Lake View">
+              <img src="https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&q=80&w=600&h=420" alt="Penthouse Lake View" loading="lazy" />
+              <span class="unit__tag">Penthouse</span>
+            </button>
+            <div class="unit__body">
+              <h3>Penthouse Lake View</h3>
+              <p class="unit__loc"><i class="fa-solid fa-location-dot"></i> Tây Hồ, Hà Nội</p>
+              <ul class="unit__meta"><li><i class="fa-solid fa-ruler-combined"></i> 160 m²</li><li><i class="fa-solid fa-bath"></i> 3 WC</li><li><i class="fa-solid fa-couch"></i> Nội thất cao cấp</li></ul>
+              <div class="unit__foot"><p class="unit__price">45 triệu<span>/tháng</span></p><a href="#lien-he" class="btn btn--outline btn--sm" data-unit="Penthouse Lake View">Đặt lịch xem</a></div>
+            </div>
+          </article>
+        </div>
+        <p class="units__empty" id="unitsEmpty" hidden>Hiện chưa có căn hộ trống cho lựa chọn này. Để lại thông tin, chúng tôi sẽ báo khi có căn phù hợp.</p>
+      </div>
+    </section>
+
+    <!-- ================= HỎI ĐÁP ================= -->
+    <section class="section section--alt" id="hoi-dap">
+      <div class="container faq-wrap">
+        <div class="section__head section__head--left reveal">
+          <span class="section__eyebrow">Hỏi đáp</span>
+          <h2 class="section__title">Câu hỏi thường gặp khi thuê căn hộ</h2>
+          <p class="section__desc">Chưa thấy câu trả lời bạn cần? Gọi <a href="tel:19000000">1900 0000</a> để được hỗ trợ ngay.</p>
+        </div>
+        <div class="faq reveal" id="faq">
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false">Tiền cọc và thời hạn hợp đồng tối thiểu là bao lâu?<i class="fa-solid fa-plus"></i></button>
+            <div class="faq__a"><p>Hợp đồng tối thiểu 6 tháng, đặt cọc 1 tháng tiền nhà và thanh toán hằng tháng. Hợp đồng từ 12 tháng được giảm 5% giá thuê.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false">Giá thuê đã bao gồm phí quản lý chưa?<i class="fa-solid fa-plus"></i></button>
+            <div class="faq__a"><p>Giá niêm yết đã gồm phí quản lý. Điện, nước, internet và phí gửi xe tính theo thực tế sử dụng, theo giá của ban quản lý tòa nhà.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false">Tôi có được nuôi thú cưng không?<i class="fa-solid fa-plus"></i></button>
+            <div class="faq__a"><p>Tùy quy định từng tòa nhà và chủ nhà. Hãy ghi chú nhu cầu trong form liên hệ, chúng tôi sẽ lọc các căn cho phép nuôi thú cưng.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false">Người nước ngoài có thuê được không?<i class="fa-solid fa-plus"></i></button>
+            <div class="faq__a"><p>Được. Chúng tôi hỗ trợ hợp đồng song ngữ Việt – Anh và đăng ký tạm trú cho khách nước ngoài.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false">Xem nhà có mất phí không?<i class="fa-solid fa-plus"></i></button>
+            <div class="faq__a"><p>Hoàn toàn miễn phí. Bạn chỉ cần đặt lịch trước ít nhất 2 giờ, nhân viên sẽ đón tại sảnh tòa nhà.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= LIÊN HỆ ================= -->
+    <section class="section contact" id="lien-he">
+      <div class="container contact__inner">
+        <div class="contact__info reveal">
+          <span class="section__eyebrow section__eyebrow--light">Liên hệ</span>
+          <h2 class="section__title">Đặt lịch xem căn hộ miễn phí</h2>
+          <p>Để lại thông tin, chuyên viên sẽ gọi lại trong 30 phút (8h–21h) và gửi danh sách căn hộ phù hợp với ngân sách của bạn.</p>
+          <ul class="contact__list">
+            <li><i class="fa-solid fa-phone"></i><span>Hotline<br /><b>1900 0000</b></span></li>
+            <li><i class="fa-solid fa-envelope"></i><span>Email<br /><b>chothue@thanhmienland.vn</b></span></li>
+            <li><i class="fa-solid fa-location-dot"></i><span>Văn phòng<br /><b>Tầng 10, Tòa nhà ABC, Quận 1, TP.HCM</b></span></li>
+          </ul>
+        </div>
+
+        <form class="form reveal" id="contactForm" novalidate>
+          <div class="form__row">
+            <div class="form__group">
+              <label for="fName">Họ và tên *</label>
+              <input id="fName" name="name" type="text" placeholder="Nguyễn Văn A" />
+              <small class="form__error"></small>
+            </div>
+            <div class="form__group">
+              <label for="fPhone">Số điện thoại *</label>
+              <input id="fPhone" name="phone" type="tel" placeholder="0901234567" />
+              <small class="form__error"></small>
+            </div>
+          </div>
+          <div class="form__group">
+            <label for="fEmail">Email</label>
+            <input id="fEmail" name="email" type="email" placeholder="ban@email.com" />
+            <small class="form__error"></small>
+          </div>
+          <div class="form__row">
+            <div class="form__group">
+              <label for="fType">Loại căn hộ quan tâm</label>
+              <select id="fType" name="type">
+                <option>Studio</option>
+                <option>1 phòng ngủ</option>
+                <option selected>2 phòng ngủ</option>
+                <option>3 phòng ngủ trở lên</option>
+              </select>
+            </div>
+            <div class="form__group">
+              <label for="fBudget">Ngân sách / tháng</label>
+              <select id="fBudget" name="budget">
+                <option>Dưới 8 triệu</option>
+                <option selected>8 – 15 triệu</option>
+                <option>15 – 25 triệu</option>
+                <option>Trên 25 triệu</option>
+              </select>
+            </div>
+          </div>
+          <div class="form__group">
+            <label for="fNote">Ghi chú</label>
+            <textarea id="fNote" name="note" rows="3" placeholder="Căn hộ bạn quan tâm, thời gian muốn xem nhà..."></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--block">Gửi yêu cầu <i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <a href="../../index.html" class="logo logo--light">
+          <span class="logo__icon"><i class="fa-solid fa-house-chimney"></i></span>
+          <span class="logo__text">ThanhMien<b>Land</b></span>
+        </a>
+        <p class="footer__desc">Kênh cho thuê căn hộ chung cư minh bạch, an toàn và nhanh chóng.</p>
+      </div>
+      <nav class="footer__links" aria-label="Liên kết nhanh">
+        <a href="../../index.html">Trang chủ</a>
+        <a href="#can-ho">Căn hộ trống</a>
+        <a href="#hoi-dap">Hỏi đáp</a>
+        <a href="#lien-he">Liên hệ</a>
+      </nav>
+      <div class="socials">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </div>
+    <p class="footer__copy">Copyright © 2026 ThanhMienLand. Bài tập thực hành HTML/CSS - Cybersoft.</p>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox__close" id="lightboxClose" aria-label="Đóng ảnh"><i class="fa-solid fa-xmark"></i></button>
+    <img class="lightbox__img" id="lightboxImg" src="" alt="" />
+  </div>
+
+  <button class="back-top" id="backTop" aria-label="Lên đầu trang"><i class="fa-solid fa-arrow-up"></i></button>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
